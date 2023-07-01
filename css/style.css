@@ -1,0 +1,25 @@
+
+.toolbar.first-toolbar {
+    background: #333; /* Dark background color */
+    height: 2rem; /* Half of the second toolbar's height */
+}
+
+.toolbar.second-toolbar {
+    background: #f0f0f0;
+}
+
+.second-toolbar .navbar-brand {
+    margin-left: 1.25rem; /* 20px converted to rem */
+}
+
+.second-toolbar .navbar-nav.mx-auto {
+    justify-content: center;
+}
+
+.second-toolbar .right-element {
+    margin-left: auto;
+}
+
+body {
+    margin: auto;
+}
