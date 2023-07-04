@@ -110,6 +110,7 @@
     margin-right: 1rem;
     background-color: #f8f9fa;
     padding: 1rem;
+    color: black;
 }
 
 /* Custom styles for the speakers section */
@@ -167,18 +168,16 @@ footer {
     align-items: center;
   }
   
-  .footer-logo {
-    /* Style your logo container */
+  /* .footer-logo {
     color: red;
-    
-  }
+  } */
   
   .logo-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: yellow;
-    width: 100%;
+    width: 50%;
   }
   
   .footer-content {
