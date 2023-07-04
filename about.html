@@ -66,43 +66,33 @@
         
         /* CSS styles for the homepage section */
         .homepage {
-    position: relative;
-}
-
-.homepage:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-}
-
-.homepage-content {
-    position: relative;
-    z-index: 1;
-    padding: 5rem;
-    color: #333;
-    font-family: "Lato", sans-serif;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* height: 100vh; */
-}
-
-
-/* .homepage-content {
-    position: relative;
-    z-index: 1;
-    padding: 5rem;
-    color: #333;
-    font-family: "Lato", sans-serif;
-} */
+            position: relative;
+        }
+        
+        .homepage:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+        }
+        
+        .homepage-content {
+            position: relative;
+            z-index: 1;
+            padding: 5rem;
+            color: #333;
+            font-family: "Lato", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         
         .homepage h1 {
             font-size: 3.5rem;
@@ -124,6 +114,116 @@
         .homepage p {
             font-size: 1.25rem;
             margin: 0;
+        }
+
+        /* CSS styles for the logo-section */
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem;
+            font-family: "Lato", sans-serif;
+            text-align: center;
+        }
+
+        .logo-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-section p {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .logo-section .box {
+            background-color: rgba(255, 255, 255);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            border: 1px solid #333;
+        }
+
+        /* CSS styles for the history section */
+        .history-section {
+            padding: 5rem;
+            font-family: "Lato", sans-serif;
+            text-align: center;
+        }
+
+        .history-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .history-section p {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .history-section .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .history-section .card {
+            width: 200px;
+            height: 200px;
+            background-image: url("https://example.com/card-background.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #333;
+        }
+
+        .history-section .card p {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        footer {
+    background-color: #343;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+        .footer .first-div {
+            width: 1.875rem; /* 30% = 1.875rem */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .footer .first-div .logo {
+            width: 1.875rem; /* Replace with your logo size in rem */
+            height: 1.875rem; /* Replace with your logo size in rem */
+            background-color: #fff; /* Replace with your logo image */
+            margin-right: 0.625rem; /* 10px = 0.625rem */
+        }
+
+        .footer .first-div p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .footer .second-div {
+            width: 4.375rem; /* 70% = 4.375rem */
+        }
+
+        .footer .second-div p {
+            font-size: 1rem;
+            margin: 0 0 1rem 0;
         }
     </style>
 </head>
@@ -154,5 +254,40 @@
             <p>Another paragraph element</p>
         </div>
     </div>
+    <section class="logo-section">
+        <h1>Logo Section</h1>
+        <p>Some text describing the logo</p>
+        <div class="box">
+            <p>Box element</p>
+        </div>
+    </section>
+    <section class="history-section">
+        <h1>Previous blah blah</h1>
+        <p>Here some history</p>
+        <div class="card-container">
+            <div class="card">
+                <p>Card 1</p>
+            </div>
+            <div class="card">
+                <p>Card 2</p>
+            </div>
+            <div class="card">
+                <p>Card 3</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="first-div">
+            <div class="logo"></div>
+            <p>Footer Text</p>
+        </div>
+        <div class="second-div">
+            <p>Footer Paragraph 1</p>
+            <p>Footer Paragraph 2</p>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
