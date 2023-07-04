@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Conference Website</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css"
+    <title>Responsive Webpage with Background Image</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" >
 </head>
 <body>
-  <!-- First Toolbar -->
-  <div class="toolbar first-toolbar navbar navbar-expand-lg">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img src="./icons/github.svg" alt="Social Icon 1"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img src="./icons/twitter.svg" alt="Social Icon 2"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">MyPage</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Language</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Second Toolbar -->
-  <div class="toolbar second-toolbar navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"><img src="./images/logo-desk.png" alt="Logo"></a>
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Program</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Join</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sponsor</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">News</a>
-      </li>
-    </ul>
-    <div class="ml-auto">
-        <span>Campaign</span>
+    <div class="first-toolbar">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
     </div>
-  </div>
+    <div class="second-toolbar">
+        <div class="logo">Logo</div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <div class="other-element">Other Element</div>
+    </div>
 
-  <!-- Rest of the homepage content goes here -->
+    <!-- Content of the homepage -->
+    <div class="homepage">
+        <div class="homepage-content">
+            <h1>Welcome to My Webpage!</h1>
+            <div class="subtheme">
+                <p>A joyful celebration believing in blah blah blah.</p>
+            </div>
+            <div class="date-venue">
+                <h1>2023.07.07~16</h1>
+                <h2>@blah blah</h2>
+            </div>
+        </div>
+    </div>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Program section -->
+    <section class="program">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Main Program</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col card">Card 1</div>
+                <div class="col card">Card 2</div>
+                <div class="col card">Card 3</div>
+                <div class="col card">Card 4</div>
+                <div class="col card">Card 5</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2><a href="#">Link to Something</a></h2>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
