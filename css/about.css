@@ -1,0 +1,219 @@
+ /* CSS styles for the first toolbar */
+ .first-toolbar {
+    height: 3.125rem;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.first-toolbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first-toolbar ul li {
+    margin-right: 0.625rem;
+    color: white;
+}
+
+/* CSS styles for the second toolbar */
+.second-toolbar {
+    height: 6.25rem;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+.second-toolbar .logo {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-toolbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.second-toolbar ul li {
+    margin-right: 0.625rem;
+}
+
+.second-toolbar .other-element {
+    color: white;
+}
+
+/* CSS styles for the homepage section */
+.homepage {
+    position: relative;
+}
+
+.homepage:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.homepage-content {
+    position: relative;
+    z-index: 1;
+    padding: 5rem;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.homepage .box {
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.homepage .box p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.homepage p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* CSS styles for the logo-section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.logo-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo-section p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.logo-section .box {
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    border: 1px solid #333;
+}
+
+/* CSS styles for the history section */
+.history-section {
+    padding: 5rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.history-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.history-section p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.history-section .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.history-section .card {
+    width: 200px;
+    height: 200px;
+    background-image: url("https://example.com/card-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+.history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 2rem;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.footer .first-div {
+    width: 1.875rem; /* 30% = 1.875rem */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer .first-div .logo {
+    width: 1.875rem; /* Replace with your logo size in rem */
+    height: 1.875rem; /* Replace with your logo size in rem */
+    background-color: #fff; /* Replace with your logo image */
+    margin-right: 0.625rem; /* 10px = 0.625rem */
+}
+
+.footer .first-div p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer .second-div {
+    width: 4.375rem; /* 70% = 4.375rem */
+}
+
+.footer .second-div p {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
