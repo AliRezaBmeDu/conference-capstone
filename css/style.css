@@ -360,6 +360,11 @@ footer {
         padding: 1rem;
       }
   
+      #navbarCollapse a{
+        font-family: "Lato", sans-serif;
+        color: black;
+      }
+      
       .navbar-toggler.collapsed .navbar-collapse {
         background-color: transparent; /* Reset background color when collapsed */
       }
@@ -529,5 +534,7 @@ footer, .partners{
 display: none;
 }
 
-
+a:hover {
+    background-color: lightblue;
+  }
 }
