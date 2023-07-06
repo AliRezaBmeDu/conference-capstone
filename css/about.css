@@ -117,7 +117,8 @@
 
   .homepage-content h1 {
     background-image: url("../images/text_bg.jpg");
-    background-clip: text;
+
+    /* background-clip: text; */
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
@@ -153,13 +154,6 @@
     text-align: center;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
-  }
-
-  .homepage .box p {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 0;
   }
 
   .contact {
@@ -218,6 +212,25 @@
     margin: 0;
   }
 
+  .history-section .card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(54, 1, 1, 0.5);
+    background-blend-mode: multiply;
+    width: 16rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+  }
+
+  .history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
   .history-section .card-container {
     display: flex;
     justify-content: center;
@@ -238,24 +251,7 @@
     background-image: url("../images/baku\ summit.jpg");
   }
 
-  .history-section .card {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(54, 1, 1, 0.5);
-    background-blend-mode: multiply;
-    width: 16rem;
-    height: 13rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #333;
-  }
 
-  .history-section .card p {
-    font-size: 1.5rem;
-    color: white;
-  }
 
   /* footer section */
   footer {
@@ -296,6 +292,14 @@
     font-size: 1.5rem;
   }
 
+  /* box elements */
+  .homepage .box p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+
   .navbar {
     display: none;
   }
@@ -327,6 +331,11 @@
 
   .hide-seek {
     display: none !important;
+  }
+
+  /* hover part */
+  a:hover {
+    background-color: lightblue;
   }
 
   .mobile-menu {
@@ -428,7 +437,8 @@
 
   .homepage-content h1 {
     background-image: url("../images/text_bg.jpg");
-    background-clip: text;
+
+    /* background-clip: text; */
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
@@ -463,12 +473,7 @@
     text-align: center;
   }
 
-  .homepage .box p {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin: 0;
-    font-family: "Lato", sans-serif;
-  }
+
 
   /* ==Logo Section Mobile Version== */
   .logo-section {
@@ -510,12 +515,7 @@
     margin-top: -2rem;
   }
 
-  .logo-section .box img {
-    text-align: center;
-    position: relative;
-    top: -2rem;
-    width: 80%;
-  }
+
 
   /* ===History Section for mobile version=== */
 
@@ -623,7 +623,6 @@
     align-items: center;
   }
 
-
   .logo-content {
     display: flex;
     justify-content: flex-end;
@@ -643,7 +642,18 @@
     font-size: 1.5rem;
   }
 
-  a:hover {
-    background-color: lightblue;
+  /* box elements */
+  .homepage .box p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+  .logo-section .box img {
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    width: 80%;
   }
 }

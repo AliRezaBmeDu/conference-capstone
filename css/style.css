@@ -118,15 +118,6 @@
     --webkit-background-clip: text;
   }
 
-  .homepage-content .subtitle,
-  .homepage-content .main-title {
-    background-image: url("../images/text_bg.jpg");
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-
   .subtitle {
     font-size: 1.8rem;
     font-weight: 700;
@@ -138,6 +129,15 @@
     font-weight: 900;
     font-family: "Lato", sans-serif;
     width: 90%;
+  }
+
+  .homepage-content .subtitle,
+  .homepage-content .main-title {
+    background-image: url("../images/text_bg.jpg");
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .subtheme {
@@ -204,14 +204,6 @@
     border-radius: 1rem;
   }
 
-  .program .card h2 {
-    font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 800;
-    margin-top: 1rem;
-    color: rgb(124, 101, 27);
-  }
-
   .program .card p {
     font-family: "Lato", sans-serif;
     font-size: 1rem;
@@ -249,12 +241,6 @@
     /* height: 12rem;
     width: 30rem; */
   }
-
-  .speakers .card img {
-    width: 12rem;
-    height: 12rem;
-  }
-
 
   /* Custom styles for the partners section */
   .partners {
@@ -319,6 +305,20 @@
     font-size: 1.5rem;
   }
 
+  /* Weird rules */
+  .program .card h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    color: rgb(124, 101, 27);
+  }
+
+  .speakers .card img {
+    width: 12rem;
+    height: 12rem;
+  }
+
   .navbar {
     display: none;
   }
@@ -342,6 +342,11 @@
 
   .desktop {
     display: none;
+  }
+
+  /* hover */
+  a:hover {
+    background-color: lightblue;
   }
 
   .hide-seek {
@@ -447,13 +452,10 @@
     --webkit-background-clip: text;
   }
 
-  .homepage-content .subtitle,
-  .homepage-content .main-title {
-    background-image: url("../images/text_bg.jpg");
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  .main-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
   }
 
   .subtitle {
@@ -462,10 +464,13 @@
     font-family: "Lato", sans-serif;
   }
 
-  .main-title {
-    font-size: 3.2rem;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
+  .homepage-content .subtitle,
+  .homepage-content .main-title {
+    background-image: url("../images/text_bg.jpg");
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .subtheme {
@@ -583,9 +588,5 @@
   footer,
   .partners {
     display: none;
-  }
-
-  a:hover {
-    background-color: lightblue;
   }
 }
