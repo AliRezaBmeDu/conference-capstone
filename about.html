@@ -2,11 +2,40 @@
 <html>
 <head>
     <title>About-Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/about.css" >
 </head>
 <body>
+    <nav class="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-removebg-preview.png" alt="Logo">
+          </a>
+        <!-- MENU items here -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Program</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sponsor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     <div class="first-toolbar">
         <ul>
             <li><img src="./icons/facebook_icon.png" alt="fb" ></li>
@@ -29,14 +58,13 @@
     </div>
     <div class="homepage">
         <div class="homepage-content">
-            <h1>WINTRADE GLOBAL SUMMIT 2023</h1>
+            <h1 class="subtitle">Embrace the Power of Trade!</h1>
+            <h1 class="main-title">WINTRADE GLOBAL SUMMIT 2023</h1>
             <h6>organized by: BeattheMarket</h6>
             <div class="box">
                 <p>Wintrade Global Summit, held every three years, is a capital market event that embodies the slogan "Power of Trade."  </p>
-                <p>This highly anticipated gathering attracts investors from around the world, providing a platform for knowledge sharing and thought exchange.</p>
                 <p>With a focus on fostering collaboration and innovation, the summit facilitates meaningful discussions that shape the future of the global economy.</p>
-                <p>It is an essential event for finance professionals seeking to stay informed, build connections, and seize opportunities in the dynamic capital market landscape.
-                </p>
+                
             </div>
             <p>Please contact us via email if you need further information about WINTRADE GLOBAL SUMMIT</p>
             <p>wtsummit2023@beatthemarket.com</p>
@@ -44,8 +72,9 @@
     </div>
 
     <section class="logo-section">
-        <h1>Wintrade Global Summit Logo</h1>
-        <p>Out of numerous submissions, the chosen logo from the competition stands out as a true representation of our brand identity. Its creative design, meaningful symbolism, and harmonious colors make it instantly recognizable and memorable. </p>
+        <h1>Wintrade Global Summit 2023 Logo</h1>
+        <p class="desktop">Out of numerous submissions, the chosen logo from the competition stands out as a true representation of our brand identity. Its creative design, meaningful symbolism, and harmonious colors make it instantly recognizable and memorable. </p>
+        <p class="mobile">The logo was decided through a logo competition held from Jun 1st to 10th.</p>
         <div class="box">
             <img src="./images/logo-removebg-preview.png">
         </div>
@@ -79,5 +108,9 @@
           </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

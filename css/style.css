@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
 
+@media (min-width:767px){
 
-
-    
 body{
     margin: auto;
     background-color: #f9f9f9;
@@ -53,7 +52,7 @@ body{
 }
 
 .logo img {
-    width: 20rem;
+    width: 12rem;
     height: 10rem;
 }
 
@@ -78,6 +77,7 @@ a {
     border: solid;
     color: #333;
     padding: 0.5rem;
+    font-size: 0.7rem;
 }
 
 /* Custom styles for the homepage */
@@ -293,10 +293,241 @@ footer {
     font-family: "Lato",sans-serif;
     font-size: 1.5rem;
   }
-  
+
+  .navbar{
+    display:none;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
 
 @media (min-width:375px) and (max-width:768px){
-    .first-toolbar{
+    body{
+        margin: auto;
+        background-color: #f9f9f9;
+        width: 100vw;
+    }
+    .first-toolbar, .second-toolbar{
         display: none;
     }
+    .desktop{
+        display: none;
+    }
+    
+    .navbar {
+        background-color: #fff;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem;
+        height: 5rem;
+      }
+  
+      .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        gap:0.3rem;
+        height: 3rem;
+        width: 3rem;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .navbar-toggler-icon {
+        background-color: #333;
+        /* color:black; */
+        width: 1.5rem;
+        height: 0.2rem;
+        border: none;
+      }
+  
+      .navbar-brand {
+        text-align: center;
+        margin: 0 auto; /* Center the logo */
+      }
+
+      .navbar-brand img {
+        height: 7rem;
+        width: 12rem;
+      }
+  
+      .navbar-collapse {
+        background-color: #fff;
+        z-index: 2;
+        padding: 1rem;
+      }
+  
+      .navbar-toggler.collapsed .navbar-collapse {
+        background-color: transparent; /* Reset background color when collapsed */
+      }
+    
+    /*------------Homepage for mobile version----------*/
+    .homepage {
+        position: relative;
+        margin-top: 3rem;
+    }
+    
+    .homepage:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../images/home_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+    }
+    
+    .homepage-content {
+        position: relative;
+        z-index: 1;
+        padding: 3rem;
+        /* color: #333; */
+        font-family: "Lato", sans-serif;
+    }
+    
+    .homepage-content h1{
+        --webkit-background-clip: text;
+    }
+    
+    .homepage-content .subtitle,
+    .homepage-content .main-title {
+        background-image: url("../images/text_bg.jpg");
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .subtitle {
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: "Lato", sans-serif;
+    }
+    
+    .main-title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: "Lato", sans-serif;
+    }
+    
+    .subtheme {
+        box-sizing: border-box;
+        border-radius: 0.2rem;
+        border: 0.5rem solid #f0f0f0;
+        margin-top: 2.125rem;
+        color: #333;
+        width: 90%;
+        padding: 0.8rem;
+    }
+    
+    .subtheme p{
+        font-family: "Lato", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: black;
+    }
+    
+    .date-venue {
+        margin-top: 1.25rem;
+        color: #333;
+    }
+
+    .date-venue h1 {
+        font-size: 1.2rem;
+    }
+
+    .date-venue h2 {
+        font-size: 0.8rem;
+    }
+    
+/*----------Program Section mobile-version----------- */
+.program {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.program h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.program .row {
+    margin-top: 2rem;
+}
+
+.p-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-color: #1a0d0d;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.p-card img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.lecture-img{
+    width: 5rem;
+}
+.p-card p{
+    width: 30%;
+}
+
+.program .card-container {
+    width: 100vw;
+}
+
+.p-card h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(124, 101, 27)
+}
+
+ /*=======speaker section for mobile version========*/
+.speakers h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.speaker-col {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.speaker-col .card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.speaker-col img{
+    width: 40%;
+    height: 10rem;
+}
+.speaker-col .speaker-detail{
+    font-family: "Lato",sans-serif;
+}
+
+footer, .partners{
+display: none;
+}
+
+
 }
