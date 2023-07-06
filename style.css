@@ -297,6 +297,10 @@ footer {
   .navbar{
     display:none;
   }
+
+  .mobile {
+    display: none;
+  }
 }
 
 @media (min-width:375px) and (max-width:768px){
@@ -306,6 +310,9 @@ footer {
         width: 100vw;
     }
     .first-toolbar, .second-toolbar{
+        display: none;
+    }
+    .desktop{
         display: none;
     }
     
@@ -444,10 +451,11 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 3rem 0;
+    padding-bottom: 2rem;
 }
 
 .program h1 {
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -455,41 +463,68 @@ footer {
     margin-top: 2rem;
 }
 
-.program .card-container {
-    width: 100%;
-}
-
-.program .card {
-    flex: 1;
-    margin-right: 0.5rem;
-    background-color: #181616;
-    padding: 1rem;
-    color: #f0f0f0;
+.p-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    background-color: #1a0d0d;
     box-sizing: border-box;
     border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.3rem;
 }
 
-.program .card h2 {
+.p-card img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.lecture-img{
+    width: 5rem;
+}
+.p-card p{
+    width: 30%;
+}
+
+.program .card-container {
+    width: 100vw;
+}
+
+.p-card h2 {
     font-family: "Lato", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 800;
-    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: rgb(124, 101, 27)
 }
 
-.program .card p {
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
+ /*=======speaker section for mobile version========*/
+.speakers h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.full-d {
-    font-family: "Lato", sans-serif;
-    color:#f0f0f0;
-    font-size: 1rem;
+.speaker-col {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
 }
 
-
-     .speakers, .partners{
+.speaker-col .card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.speaker-col img{
+    width: 40%;
+    height: 10rem;
+}
+.speaker-col .speaker-detail{
+    font-family: "Lato",sans-serif;
+}
+     .partners{
         display: none;
       }
 }
