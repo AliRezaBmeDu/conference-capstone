@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
 
-@media (min-width: 768px){
-
-
-.body{
+@media (min-width: 768px) {
+  .body {
     margin: auto;
     background-color: #f9f9f9;
-    font-family: "Lato",sans-serif;
-}
-.first-toolbar {
+    font-family: "Lato", sans-serif;
+  }
+
+  .first-toolbar {
     height: 2rem;
     background-color: #333;
     color: white;
@@ -17,21 +16,21 @@
     justify-content: flex-end;
     align-items: center;
     padding-inline: 5rem;
-}
+  }
 
-.first-toolbar ul {
+  .first-toolbar ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-.first-toolbar ul li {
+  .first-toolbar ul li {
     margin-right: 1.2rem;
     color: white;
-}
+  }
 
-.second-toolbar {
+  .second-toolbar {
     height: 4.25rem;
     background-color: #f8f9fa;
     display: flex;
@@ -39,39 +38,41 @@
     align-items: center;
     padding-inline: 5rem;
     padding-left: 5rem;
-}
+  }
 
-.second-toolbar .logo {
+  .second-toolbar .logo {
     /* margin-top: 1rem; */
     width: 12.125rem;
     height: 9.125rem;
+
     /* background-color: #333; */
+
     /* color: white; */
     align-items: center;
-}
+  }
 
-.logo img {
+  .logo img {
     width: 100%;
     height: 100%;
-}
+  }
 
-.second-toolbar ul {
+  .second-toolbar ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-.second-toolbar ul li {
+  .second-toolbar ul li {
     margin-right: 1.5rem;
-    color:#333;
-}
+    color: #333;
+  }
 
-a {
-    color:#333;
-}
+  a {
+    color: #333;
+  }
 
-.second-toolbar .other-element {
+  .second-toolbar .other-element {
     box-sizing: border-box;
     border: solid;
     color: #333;
@@ -79,17 +80,17 @@ a {
     width: 8rem;
     font-size: 0.8rem;
     padding: 0.4rem;
-}
+  }
 
 
 
 
-/* CSS styles for the homepage section */
-.homepage {
+  /* CSS styles for the homepage section */
+  .homepage {
     position: relative;
-}
+  }
 
-.homepage:before {
+  .homepage::before {
     content: "";
     position: absolute;
     top: 0;
@@ -100,9 +101,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
-}
+  }
 
-.homepage-content {
+  .homepage-content {
     position: relative;
     z-index: 1;
     padding: 5rem;
@@ -112,62 +113,61 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.homepage-content h1 {
+  .homepage-content h1 {
     background-image: url("../images/text_bg.jpg");
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-}
+  }
 
-.homepage h1 {
+  .homepage h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-weight:900;
-    font-family: "Lato",sans-serif;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
     text-align: center;
     width: 70%;
-}
+  }
 
-.subtitle{
+  .subtitle {
     font-size: 1rem;
     margin-bottom: 1rem;
-    font-weight:500;
-    font-family: "Lato",sans-serif;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
     text-align: center;
-}
+  }
 
-.homepage .box {
+  .homepage .box {
     background-color: rgb(241, 234, 234);
     padding: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
     width: 80%;
     margin-top: 2rem;
-}
+  }
 
-.homepage p {
+  .homepage p {
     text-align: center;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
-}
+  }
 
-.homepage .box p {
+  .homepage .box p {
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0;
-    
-}
+  }
 
-.contact{
+  .contact {
     font-weight: 700;
-}
+  }
 
-/* CSS styles for the logo-section */
-.logo-section {
+  /* CSS styles for the logo-section */
+  .logo-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,69 +175,70 @@ a {
     padding: 5rem;
     font-family: "Lato", sans-serif;
     text-align: center;
-}
+  }
 
-.logo-section h1 {
+  .logo-section h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
+  }
 
-.logo-section p {
+  .logo-section p {
     font-size: 1.25rem;
     margin: 0;
-}
+  }
 
-.logo-section .box {
+  .logo-section .box {
     background-color: rgba(255, 255, 255);
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: 1px solid #333;
     margin-top: 1rem;
     height: 10rem;
-}
+  }
 
-.logo-section img {
+  .logo-section img {
     height: 20rem;
     margin-top: -6rem;
-}
+  }
 
-/* CSS styles for the history section */
-.history-section {
+  /* CSS styles for the history section */
+  .history-section {
     padding: 5rem;
     font-family: "Lato", sans-serif;
     text-align: center;
-}
+  }
 
-.history-section h1 {
+  .history-section h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-}
+  }
 
-.history-section p {
+  .history-section p {
     font-size: 1.25rem;
     margin: 0;
-}
+  }
 
-.history-section .card-container {
+  .history-section .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     gap: 1rem;
-}
+  }
 
-
-.history-section .card:nth-of-type(1){
+  .history-section .card:nth-of-type(1) {
     background-image: url("../images/London\ summit.jpg");
-}
-.history-section .card:nth-of-type(2){
-    background-image: url("../images/sydney\ summit.jpg");
-}
-.history-section .card:nth-of-type(3){
-    background-image: url("../images/baku\ summit.jpg");
-}
+  }
 
-.history-section .card {
+  .history-section .card:nth-of-type(2) {
+    background-image: url("../images/sydney\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(3) {
+    background-image: url("../images/baku\ summit.jpg");
+  }
+
+  .history-section .card {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,30 +250,30 @@ a {
     justify-content: center;
     align-items: center;
     border: 1px solid #333;
-}
+  }
 
-.history-section .card p {
+  .history-section .card p {
     font-size: 1.5rem;
     color: white;
-}
+  }
 
-/*footer section*/
-footer {
+  /* footer section */
+  footer {
     background-color: #dacdcd;
     color: #1a1818;
     padding: 2rem;
   }
-  
+
   .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
+
   /* .footer-logo {
     color: red;
   } */
-  
+
   .logo-content {
     display: flex;
     justify-content: flex-end;
@@ -284,14 +285,14 @@ footer {
   .logo-content img {
     width: 16rem;
   }
-  
+
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
   }
 
-  .footer-content h2{
-    font-family: "Lato",sans-serif;
+  .footer-content h2 {
+    font-family: "Lato", sans-serif;
     font-size: 1.5rem;
   }
 
@@ -299,318 +300,330 @@ footer {
     display: none;
   }
 
-  .mobile{
+  .mobile {
     display: none;
   }
-  .partners{
+
+  .partners {
     display: none;
   }
 }
 
-@media (min-width:375px) and (max-width:768px){
-    body{
-        margin: auto;
-        background-color: #fff;
-        width: 100vw;
-    }
-    .first-toolbar, .second-toolbar{
-        display: none;
-    }
-    .desktop{
-        display: none;
-    }
+@media (min-width: 375px) and (max-width: 768px) {
+  body {
+    margin: auto;
+    background-color: #fff;
+    width: 100vw;
+  }
 
-    .hide-seek {
-        display: none !important;
-    }
-    
-    .mobile-menu {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        top: 0;
-        background-color: #fff;
-        width: 100%;
-        height: 100vh;
-        padding-top: 2rem;
-        z-index: 1;
-    }
+  .first-toolbar,
+  .second-toolbar {
+    display: none;
+  }
 
-    .menu-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style-type: none;
-        gap: 2.5rem;
-        padding-top: 1rem;
-      }
-    
-      .menu-list li a {
-        color: #333;
-        font-size: 2rem;
-        font-weight: 600;
-        font-family: "Lato", sans-serif;
-        text-align: center;
-        z-index: 5;
-      }
+  .desktop {
+    display: none;
+  }
 
-      .close-button {
-        margin-left: 3rem;
-        border: none;
-      }
-    
-    .navbar {
-        background-color: transparent;
-        color: #333;
-        display: flex;
-        align-items: center;
-        padding: 1rem 3rem;
-        height: 5rem;
-      }
-  
-      .navbar-toggler {
-        display: flex;
-        flex-direction: column;
-        gap:0.3rem;
-        height: 3rem;
-        width: 3rem;
-        padding: 0.5rem;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      .navbar-toggler-icon {
-        background-color: #333;
-        width: 1.5rem;
-        height: 0.2rem;
-        border: none;
-      }
-  
-      
-      /*homepage section about for mobile*/
+  .hide-seek {
+    display: none !important;
+  }
 
-      .homepage {
-        position: relative;
-        /* margin-top: 3rem; */
-    }
-    
-    .homepage:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0.2;
-    }
-    
-    .homepage-content {
-        position: relative;
-        z-index: 1;
-        padding: 1rem;
-        color: #333;
-        font-family: "Lato", sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .homepage-content h1 {
-        background-image: url("../images/text_bg.jpg");
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .main-title {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        font-weight:700;
-        font-family: "Lato",sans-serif;
-    }
-    
-    .subtitle {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 400;
-        font-family: "Lato",sans-serif;
-        margin-bottom:1rem;
-    }
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+    z-index: 1;
+  }
 
-    .homepage .box {
-        background-color: rgba(255, 255, 255);
-        padding: 2rem;
-        border-radius: 0.5rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        margin-top: 2rem;
-    }
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 2.5rem;
+    padding-top: 1rem;
+  }
 
-    .homepage p {
-        text-align: center;
-    }
-    
-    .homepage .box p {
-        font-size: 1rem;
-        line-height: 1.2rem;
-        margin: 0;
-        font-family: "Lato", sans-serif;
-    }
+  .menu-list li a {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    z-index: 5;
+  }
 
-    /*==Logo Section Mobile Version==*/
-    .logo-section{
-        margin-top: 2rem;
-    }
-    .logo-section h1{
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-top: 4rem;
-        font-family: "Lato", sans-serif;
-        padding-inline: 3rem;
-    }
+  .close-button {
+    margin-left: 3rem;
+    border: none;
+  }
 
-    .logo-section p {
-        text-align: center;
-        font-size: 1.2rem;
-        font-family: "Lato", sans-serif;
-        font-weight: 600;
-        color:#333;
-        padding-inline: 2rem;
+  .navbar {
+    background-color: transparent;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    height: 5rem;
+  }
 
-    }
+  .navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .logo-section .box {
-        background-color: rgba(255, 255, 255);
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        border: 1px #333;
-        margin-top: 1rem;
-        height: 10rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .logo-section .box img{
-        text-align: center;
-        position: relative;
-        top: -2rem;
-        width: 80%;
-    }
+  .navbar-toggler-icon {
+    background-color: #333;
+    width: 1.5rem;
+    height: 0.2rem;
+    border: none;
+  }
 
-    /*===History Section for mobile version===*/
 
-    .history-section {
-        padding: 5rem;
-        font-family: "Lato", sans-serif;
-        text-align: center;
-        margin-top: -2rem;
-    }
-    
-    .history-section h1 {
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin-top: 4rem;
-        font-family: "Lato", sans-serif;
-        margin-bottom: 1rem;
-    }
-    
-    .history-section p {
-        font-size: 1rem;
-        margin: 0;
-    }
-    
-    .history-section .card-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        gap: 0.5rem;
-    }
-    
-    .history-section .card:nth-of-type(1){
-        background-image: url("../images/London\ summit.jpg");
-    }
-    .history-section .card:nth-of-type(2){
-        background-image: url("../images/sydney\ summit.jpg");
-    }
-    .history-section .card:nth-of-type(3){
-        background-image: url("../images/baku\ summit.jpg");
-    }
-    
-    .history-section .card {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(54, 1, 1, 0.5);
-        background-blend-mode: multiply;
-        width: 100%;
-        height: 13rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #333;
-    }
-    
-    .history-section .card p {
-        font-size: 1.5rem;
-        color: white;
-    }
+  /* homepage section about for mobile */
 
-    /*Partner Section for About page mobile version*/
-    .partners {
-        background-color: #333;
-        padding: 2rem;
-        margin-top: 5rem;
-        color: #f0f0f0;
-        }
-        
-        .partners h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-        }
-        
-        .sponsors {
-            margin: auto;
-            padding-inline: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .sponsors img {
-            width: 6rem;
-            height: 4rem;
-            margin-right: 2rem;
-        }
+  .homepage {
+    position: relative;
 
-        /*=====footer section for mobile=====*/
+    /* margin-top: 3rem; */
+  }
 
-        /*footer section*/
-footer {
+  .homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  .homepage-content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepage-content h1 {
+    background-image: url("../images/text_bg.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .homepage .box {
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .homepage p {
+    text-align: center;
+  }
+
+  .homepage .box p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+  /* ==Logo Section Mobile Version== */
+  .logo-section {
+    margin-top: 2rem;
+  }
+
+  .logo-section h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    font-family: "Lato", sans-serif;
+    padding-inline: 3rem;
+  }
+
+  .logo-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: #333;
+    padding-inline: 2rem;
+  }
+
+  .logo-section .box {
+    background-color: rgba(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px #333;
+    margin-top: 1rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-content img {
+    width: 8rem;
+    margin-top: -2rem;
+  }
+
+  .logo-section .box img {
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    width: 80%;
+  }
+
+  /* ===History Section for mobile version=== */
+
+  .history-section {
+    padding: 5rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: -2rem;
+  }
+
+  .history-section h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .history-section p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .history-section .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .history-section .card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(54, 1, 1, 0.5);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+  }
+
+  .history-section .card:nth-of-type(1) {
+    background-image: url("../images/London\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(2) {
+    background-image: url("../images/sydney\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(3) {
+    background-image: url("../images/baku\ summit.jpg");
+  }
+
+  .history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  /* Partner Section for About page mobile version */
+  .partners {
+    background-color: #333;
+    padding: 2rem;
+    margin-top: 5rem;
+    color: #f0f0f0;
+  }
+
+  .partners h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .sponsors {
+    margin: auto;
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sponsors img {
+    width: 6rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+
+  /* =====footer section for mobile===== */
+
+  /* footer section */
+  footer {
     background-color: #fff;
     color: #333;
     padding: 2rem;
   }
-  
+
   .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
-  
+
+
   .logo-content {
     display: flex;
     justify-content: flex-end;
@@ -619,23 +632,16 @@ footer {
     width: 50%;
   }
 
-  .logo-content img {
-    width: 8rem;
-    margin-top: -2rem;
-  }
-  
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
     justify-items: center;
   }
 
-  .footer-content h2{
-    font-family: "Lato",sans-serif;
+  .footer-content h2 {
+    font-family: "Lato", sans-serif;
     font-size: 1.5rem;
   }
-
-
 
   a:hover {
     background-color: lightblue;
