@@ -9,33 +9,18 @@
     <link rel="stylesheet" href="./css/about.css" >
 </head>
 <body>
-    <nav class="navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo-removebg-preview.png" alt="Logo">
-          </a>
-        <!-- MENU items here -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Homepage</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sponsor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+    <!-- Mobile menu bar -->
+    <div class="mobile-menu mobile">
+        <button class="close-button" "><img src="./icons/closeButtonIcon.png" /></button>
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
     <div class="first-toolbar">
         <ul>
             <li><img src="./icons/facebook_icon.png" alt="fb" ></li>
@@ -56,7 +41,14 @@
         </ul>
         <div class="other-element">WT Campaign</div>
     </div>
-    <div class="homepage">
+    <section class="homepage">
+        <nav class="navbar">
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
         <div class="homepage-content">
             <h1 class="subtitle">Embrace the Power of Trade!</h1>
             <h1 class="main-title">WINTRADE GLOBAL SUMMIT 2023</h1>
@@ -69,7 +61,7 @@
             <p>Please contact us via email if you need further information about WINTRADE GLOBAL SUMMIT</p>
             <p>wtsummit2023@beatthemarket.com</p>
         </div>
-    </div>
+    </section>
 
     <section class="logo-section">
         <h1>Wintrade Global Summit 2023 Logo</h1>
@@ -138,7 +130,7 @@
           </div>
         </div>
     </footer>
-
+    <script src="./javascripts/menu-button.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

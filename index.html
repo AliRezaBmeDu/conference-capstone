@@ -11,33 +11,19 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo-removebg-preview.png" alt="Logo">
-          </a>
-        <!-- MENU items here -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sponsor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+    <!-- Mobile menu bar -->
+    <div class="mobile-menu mobile">
+        <button class="close-button" "><img src="./icons/closeButtonIcon.png" /></button>
+        <ul class="menu-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <!-- Mobile Menu close -->
     <div class="first-toolbar">
         <ul>
             <li><img src="./icons/facebook_icon.png" alt="fb" ></li>
@@ -60,7 +46,14 @@
     </div>
 
     <!-- Content of the homepage -->
-    <div class="homepage">
+    <section class="homepage">
+        <nav class="navbar">
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
         <div class="homepage-content">
                 <h1 class="subtitle"> Embrace the Power of Trade!</h1>
                 <h1 class="main-title">WINTRADE GLOBAL SUMMIT 2023</h1>
@@ -72,7 +65,7 @@
                 <h2>@Bangabandhu Intl. Conference Center, Dhaka</h2>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Program section -->
     <section class="program desktop">
@@ -189,6 +182,7 @@
 </footer>
 
     <script src="./javascripts/detail.js"></script>
+    <script src="./javascripts/menu-button.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
