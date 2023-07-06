@@ -347,6 +347,12 @@ footer {
         background-color: #fff;
         z-index: 2;
         padding: 1rem;
+        text-align: center;
+      }
+
+      #navbarCollapse a{
+        font-family: "Lato", sans-serif;
+        color: black;
       }
   
       .navbar-toggler.collapsed .navbar-collapse {
@@ -555,7 +561,44 @@ footer {
             margin-right: 2rem;
         }
 
-    footer {
-        display: none;
-    }
+        /*=====footer section for mobile=====*/
+
+        /*footer section*/
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  .logo-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    width: 50%;
+  }
+
+  .logo-content img {
+    width: 8rem;
+    margin-top: -2rem;
+  }
+  
+  .footer-content {
+    background-color: transparent;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  .footer-content h2{
+    font-family: "Lato",sans-serif;
+    font-size: 1.5rem;
+  }
+
 }
