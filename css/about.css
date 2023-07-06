@@ -287,6 +287,9 @@ footer {
   .mobile{
     display: none;
   }
+  .partners{
+    display: none;
+  }
 }
 
 @media (min-width:375px) and (max-width:768px){
@@ -523,6 +526,34 @@ footer {
         font-size: 1.5rem;
         color: white;
     }
+
+    /*Partner Section for About page mobile version*/
+    .partners {
+        background-color: #333;
+        padding: 2rem;
+        margin-top: 5rem;
+        color: #f0f0f0;
+        }
+        
+        .partners h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        }
+        
+        .sponsors {
+            margin: auto;
+            padding-inline: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .sponsors img {
+            width: 6rem;
+            height: 4rem;
+            margin-right: 2rem;
+        }
 
     footer {
         display: none;
