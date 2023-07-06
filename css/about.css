@@ -75,7 +75,10 @@ a {
     box-sizing: border-box;
     border: solid;
     color: #333;
-    padding: 0.5rem;
+    text-align: center;
+    width: 8rem;
+    font-size: 0.8rem;
+    padding: 0.4rem;
 }
 
 
@@ -120,14 +123,24 @@ a {
 }
 
 .homepage h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight:900;
     font-family: "Lato",sans-serif;
+    text-align: center;
+    width: 70%;
+}
+
+.subtitle{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight:500;
+    font-family: "Lato",sans-serif;
+    text-align: center;
 }
 
 .homepage .box {
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(241, 234, 234);
     padding: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
@@ -135,12 +148,22 @@ a {
     margin-top: 2rem;
 }
 
+.homepage p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
 .homepage .box p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    
+}
+
+.contact{
+    font-weight: 700;
 }
 
 /* CSS styles for the logo-section */
@@ -203,14 +226,6 @@ a {
     gap: 1rem;
 }
 
-/* .history-section .card:before{
-    position: absolute;
-    background-image: url("../images/Chrysler.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-} */
 
 .history-section .card:nth-of-type(1){
     background-image: url("../images/London\ summit.jpg");
@@ -223,7 +238,7 @@ a {
 }
 
 .history-section .card {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(54, 1, 1, 0.5);
@@ -243,8 +258,8 @@ a {
 
 /*footer section*/
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #dacdcd;
+    color: #1a1818;
     padding: 2rem;
   }
   
@@ -367,38 +382,12 @@ footer {
   
       .navbar-toggler-icon {
         background-color: #333;
-        /* color:black; */
         width: 1.5rem;
         height: 0.2rem;
         border: none;
       }
   
-      .navbar-brand {
-        text-align: center;
-        margin: 0 auto; /* Center the logo */
-      }
-
-      .navbar-brand img {
-        height: 7rem;
-        width: 12rem;
-      }
-  
-      .navbar-collapse {
-        background-color: #fff;
-        z-index: 2;
-        padding: 1rem;
-        text-align: center;
-      }
-
-      #navbarCollapse a{
-        font-family: "Lato", sans-serif;
-        color: black;
-      }
-  
-      .navbar-toggler.collapsed .navbar-collapse {
-        background-color: transparent; /* Reset background color when collapsed */
-      }
-
+      
       /*homepage section about for mobile*/
 
       .homepage {

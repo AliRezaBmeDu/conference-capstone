@@ -80,10 +80,11 @@ a {
     box-sizing: border-box;
     border: solid;
     color: #333;
-    padding: 0.5rem;
-    font-size: 0.7rem;
+    text-align: center;
+    width: 8rem;
+    font-size: 0.8rem;
+    padding: 0.4rem;
 }
-
 /* Custom styles for the homepage */
 .homepage {
     position: relative;
@@ -105,7 +106,7 @@ a {
 .homepage-content {
     position: relative;
     z-index: 1;
-    padding: 5rem;
+    padding: 8rem;
     /* color: #333; */
     font-family: "Lato", sans-serif;
 }
@@ -124,30 +125,31 @@ a {
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     font-family: "Lato", sans-serif;
 }
 
 .main-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     font-family: "Lato", sans-serif;
+    width:90%;
 }
 
 .subtheme {
     box-sizing: border-box;
     border-radius: 0.2rem;
-    border: 0.5rem solid #f0f0f0;
+    border: 0.5rem solid #e4e0e0;
     margin-top: 2.125rem;
     color: #333;
-    width: 90%;
-    padding: 0.2rem;
+    width: 80%;
+    padding: 1rem;
 }
 
 .subtheme p{
     font-family: "Lato", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 600;
     color: black;
 }
@@ -155,6 +157,18 @@ a {
 .date-venue {
     margin-top: 1.25rem;
     color: #333;
+
+}
+
+.date-venue h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.date-venue h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 /* Custom styles for the program section */
@@ -406,7 +420,7 @@ footer {
         background-image: url("../images/home_background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.4;
+        opacity: 0.2;
     }
     
     .homepage-content {
