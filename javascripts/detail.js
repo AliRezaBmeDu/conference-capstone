@@ -19,7 +19,7 @@ const mobileSpeakers = [
     description: 'Recognized for her vision and client-centric approach',
   },
   {
-    imageSrc: './images/speakers/Carl Icahn.png',
+    imageSrc: './images/speakers/Carl Icahn.jpg',
     name: 'Carl Icahn',
     role: 'Chairman, Icahn Enterprises',
     description: 'Known for his aggressive investment strategies',
@@ -39,90 +39,105 @@ const mobileSpeakers = [
 ];
 
 // Create the first section for mobile
-const mobileSection = document.getElementById('speaker-mobile');
-mobileSection.className = 'speakers mobile';
 
-const mobileHeading = document.createElement('h1');
-mobileHeading.textContent = 'Featured Speakers';
-mobileSection.appendChild(mobileHeading);
+var speakerlist = mobileSpeakers;
 
-const mobileSpeakerContainer = document.createElement('div');
-mobileSpeakerContainer.className = 'speaker-col';
+function createSection(speakerlist) {
+  const mobileSection = document.getElementById('speaker-mobile');
+  mobileSection.innerHTML = '';
+  mobileSection.className = 'speakers';
+  
+  const mobileHeading = document.createElement('h3');
+  mobileHeading.textContent = 'Featured Speakers';
+  mobileHeading.className = 'heading';
+  mobileSection.appendChild(mobileHeading);
+  
+  const breakline = document.createElement('div');
+  breakline.className = 'endline';
+  mobileSection.appendChild(breakline);
+  
+  const mobileSpeakerContainer = document.createElement('div');
+  mobileSpeakerContainer.className = 'speakercard-container';
+  mobileSpeakerContainer.innerHTML = ''; 
+  speakerlist.forEach((speaker) => {
+    const card = document.createElement('div');
+    card.className = 'speaker-card';
+  
+    const image = document.createElement('img');
+    image.src = speaker.imageSrc;
+    image.alt = 'speaker1';
+    card.appendChild(image);
+  
+    const speakerDetail = document.createElement('div');
+    speakerDetail.className = 'speaker-detail';
+  
+    const speakerName = document.createElement('h4');
+    speakerName.textContent = speaker.name;
+    speakerName.className = 'speaker-name';
+    speakerDetail.appendChild(speakerName);
+  
+    const speakerRole = document.createElement('h5');
+    speakerRole.textContent = speaker.role;
+    speakerRole.className = 'speaker-designation';
+    speakerDetail.appendChild(speakerRole);
+  
+    const dottedline = document.createElement('div');
+    dottedline.className= 'dot-line';
+    dottedline.innerHTML = `<div class="single-dot"></div>
+                            <div class="single-dot"></div>
+                            <div class="single-dot"></div>
+                            <div class="single-dot"></div>
+                            <div class="single-dot"></div>`;
+    speakerDetail.appendChild(dottedline);
+  
+    const speakerDescription = document.createElement('p');
+    speakerDescription.textContent = speaker.description;
+    speakerDescription.className = 'speaker-about';
+    speakerDetail.appendChild(speakerDescription);
+  
+    card.appendChild(speakerDetail);
+    mobileSpeakerContainer.appendChild(card);
+  });
+  
+  
+  mobileSection.appendChild(mobileSpeakerContainer);
+  
+  }
+if (window.innerWidth < 768) {
+  speakerlist = mobileSpeakers.slice(0,2);
+}
 
-mobileSpeakers.forEach((speaker) => {
-  const card = document.createElement('div');
-  card.className = 'card';
 
-  const image = document.createElement('img');
-  image.src = speaker.imageSrc;
-  image.alt = 'speaker1';
-  card.appendChild(image);
+//See button functions
+const seeMore = document.getElementById('see-more');
+const seeLess = document.getElementById('see-less');
 
-  const speakerDetail = document.createElement('div');
-  speakerDetail.className = 'speaker-detail';
-
-  const speakerName = document.createElement('h2');
-  speakerName.textContent = speaker.name;
-  speakerDetail.appendChild(speakerName);
-
-  const speakerRole = document.createElement('h4');
-  speakerRole.textContent = speaker.role;
-  speakerDetail.appendChild(speakerRole);
-
-  const speakerDescription = document.createElement('p');
-  speakerDescription.textContent = speaker.description;
-  speakerDetail.appendChild(speakerDescription);
-
-  card.appendChild(speakerDetail);
-  mobileSpeakerContainer.appendChild(card);
+seeMore.addEventListener('click', () =>{
+  seeLess.style.display = 'block';
+  seeMore.style.display = 'none';
+  speakerlist = mobileSpeakers;
+  createSection(speakerlist);
 });
 
-mobileSection.appendChild(mobileSpeakerContainer);
-
-// Create the second section for desktop
-const desktopSection = document.getElementById('speaker-desktop');
-desktopSection.className = 'speakers desktop';
-
-const desktopHeading = document.createElement('h1');
-desktopHeading.textContent = 'Featured Speakers';
-desktopSection.appendChild(desktopHeading);
-
-const desktopSpeakerRow = document.createElement('div');
-desktopSpeakerRow.className = 'speaker-row row';
-
-// Create speaker cards for desktop section
-const desktopSpeakers = mobileSpeakers; // Use the same speakers as in the mobile section
-
-desktopSpeakers.forEach((speaker) => {
-  const col = document.createElement('div');
-  col.className = 'col-6';
-
-  const card = document.createElement('div');
-  card.className = 'card';
-
-  const image = document.createElement('img');
-  image.src = speaker.imageSrc;
-  image.alt = 'speaker1';
-  card.appendChild(image);
-
-  const speakerDetail = document.createElement('div');
-  speakerDetail.className = 'speaker-detail';
-
-  const speakerName = document.createElement('h2');
-  speakerName.textContent = speaker.name;
-  speakerDetail.appendChild(speakerName);
-
-  const speakerRole = document.createElement('h4');
-  speakerRole.textContent = speaker.role;
-  speakerDetail.appendChild(speakerRole);
-
-  const speakerDescription = document.createElement('p');
-  speakerDescription.textContent = speaker.description;
-  speakerDetail.appendChild(speakerDescription);
-
-  card.appendChild(speakerDetail);
-  col.appendChild(card);
-  desktopSpeakerRow.appendChild(col);
+seeLess.addEventListener('click', () =>{
+  seeLess.style.display = 'none';
+  seeMore.style.display = 'block';
+  speakerlist = mobileSpeakers.slice(0,2);
+  createSection(speakerlist)
 });
 
-desktopSection.appendChild(desktopSpeakerRow);
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    speakerlist = mobileSpeakers;
+    createSection(speakerlist);
+    seeMore.style.display = 'none';
+  }else if(window.innerWidth < 768){
+    speakerlist = mobileSpeakers.slice(0,2);
+    createSection(speakerlist);
+    seeMore.style.display = 'block';
+  }
+  seeLess.style.display = 'none';
+});
+
+createSection(speakerlist);
+//Create the speakers section
