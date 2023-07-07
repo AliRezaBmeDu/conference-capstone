@@ -5,6 +5,8 @@
   --orange: #ec5242;
   --gray: #d3d3d3;
   --dark: #272a31;
+  --midas: #595959;
+  --lightmidas: #868686;
 }
 
 @media (min-width: 767px) {
@@ -125,7 +127,7 @@
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: "Lato", sans-serif;
   }
@@ -188,7 +190,7 @@
     padding: 3rem 0;
   }
 
-  .program h1 {
+  .program h2 {
     margin-bottom: 2rem;
   }
 
@@ -256,7 +258,7 @@
     color: #f0f0f0;
   }
 
-  .partners h1 {
+  .partners h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -294,30 +296,32 @@
     justify-content: flex-end;
     align-items: center;
     background-color: transparent;
-    width: 50%;
+    width: 40%;
   }
 
   .logo-content img {
-    width: 16rem;
+    width: 12rem;
   }
 
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
+    width: 60%;
   }
 
-  .footer-content h2 {
+  .footer-content h3 {
     font-family: "Lato", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
+
 
   /* Weird rules */
-  .program .card h2 {
+  .program .card h3 {
     font-family: "Lato", sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
     margin-top: 1rem;
-    color: rgb(124, 101, 27);
+    color: var(--orange);
   }
 
   .speakers .card img {
@@ -365,7 +369,7 @@
     flex-direction: column;
     justify-content: center;
     top: 0;
-    background-color: #b3a7a7ce;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
     padding-top: 2rem;
@@ -382,8 +386,8 @@
   }
 
   .menu-list li a {
-    color: #333;
-    font-size: 2rem;
+    color: var(--orange);
+    font-size: 1rem;
     font-weight: 600;
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -515,7 +519,8 @@
     padding-bottom: 2rem;
   }
 
-  .program h1 {
+
+  .program h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -553,11 +558,11 @@
     width: 100vw;
   }
 
-  .p-card h2 {
+  .p-card h3 {
     font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(124, 101, 27);
+    color: var(--orange);
   }
 
   /* =======speaker section for mobile version======== */

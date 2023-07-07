@@ -388,8 +388,8 @@
   }
 
   .menu-list li a {
-    color: #333;
-    font-size: 2rem;
+    color: var(--orange);
+    font-size: 1rem;
     font-weight: 600;
     font-family: "Lato", sans-serif;
     text-align: center;
