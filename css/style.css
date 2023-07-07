@@ -689,23 +689,41 @@
   /* =======speaker section for mobile version======== */
   .see-more{
     background-color: white;
-    width: 100%;
     height: 3rem;
     font-family:"Lato",sans-serif;
-    /* display:none; */
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+    border: solid 1px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .see-less{
-    background-color: var(--gray);
-    width: 100%;
+    background-color: white;
     height: 3rem;
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-family: "Lato",sans-serif;
+    margin: auto;
     display:none;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    border: solid 1px;
+    width: 90%;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-img{
+    position: relative;
+    bottom: 0.45rem;
   }
 
   footer,

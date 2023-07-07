@@ -16,7 +16,7 @@ const mobileSpeakers = [
     imageSrc: './images/speakers/Mary Erdoes.jpg',
     name: 'Mary Erdoes',
     role: 'CEO, J.P. Morgan',
-    description: 'Recognized for her vision and client-centric approach',
+    description: 'Recognized for her strategic vision and client-centric approach.',
   },
   {
     imageSrc: './images/speakers/Carl Icahn.jpg',
@@ -113,7 +113,7 @@ const seeMore = document.getElementById('see-more');
 const seeLess = document.getElementById('see-less');
 
 seeMore.addEventListener('click', () =>{
-  seeLess.style.display = 'block';
+  seeLess.style.display = 'flex';
   seeMore.style.display = 'none';
   speakerlist = mobileSpeakers;
   createSection(speakerlist);
@@ -121,7 +121,7 @@ seeMore.addEventListener('click', () =>{
 
 seeLess.addEventListener('click', () =>{
   seeLess.style.display = 'none';
-  seeMore.style.display = 'block';
+  seeMore.style.display = 'flex';
   speakerlist = mobileSpeakers.slice(0,2);
   createSection(speakerlist)
 });
@@ -134,7 +134,7 @@ window.addEventListener('resize', () => {
   }else if(window.innerWidth < 768){
     speakerlist = mobileSpeakers.slice(0,2);
     createSection(speakerlist);
-    seeMore.style.display = 'block';
+    seeMore.style.display = 'flex';
   }
   seeLess.style.display = 'none';
 });
