@@ -1,5 +1,5 @@
 const menuButton = document.querySelector('.navbar-toggler');
-const otherComponents = document.querySelectorAll('section,footer');
+const otherComponents = document.querySelectorAll('section,header,footer');
 const menuPage = document.querySelector('.mobile-menu');
 const closeButton = document.querySelector('.close-button');
 

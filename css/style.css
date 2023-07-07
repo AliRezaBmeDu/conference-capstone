@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
 
+:root {
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+  --dark: #272a31;
+}
+
 @media (min-width: 767px) {
   body {
     margin: auto;

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
 
+:root {
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+  --dark: #272a31;
+  --midas: #595959;
+  --lightmidas: #868686;
+}
+
+
 @media (min-width: 768px) {
   .body {
     margin: auto;
@@ -167,14 +176,25 @@
     text-align: center;
   }
 
-  .logo-section h1 {
-    font-size: 2.5rem;
+  .logo-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    color:var(--dark);
+  }
+
+  .hz-line {
+    background-color: var(--midas);
+    width:3rem;
+    height: 0.2rem;
   }
 
   .logo-section p {
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     margin: 0;
+    margin-top: 1rem;
+    color: var(--lightmidas);
+    font-weight: 700;
   }
 
   .logo-section .box {
@@ -193,20 +213,28 @@
 
   /* CSS styles for the history section */
   .history-section {
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     font-family: "Lato", sans-serif;
     text-align: center;
   }
 
-  .history-section h1 {
-    font-size: 3.5rem;
+  .history-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
   .history-section p {
-    font-size: 1.25rem;
+    font-size: 0.85rem;
     margin: 0;
+    color: var(--lightmidas);
+    margin-top: 1rem;
   }
+  
 
   .history-section .card {
     background-size: cover;
@@ -236,15 +264,21 @@
   }
 
   .history-section .card:nth-of-type(1) {
-    background-image: url("../images/London\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/London\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(2) {
-    background-image: url("../images/sydney\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/sydney\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(3) {
-    background-image: url("../images/baku\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/baku\ summit.jpg");
   }
 
   /* footer section */
@@ -260,9 +294,6 @@
     align-items: center;
   }
 
-  /* .footer-logo {
-    color: red;
-  } */
 
   .logo-content {
     display: flex;
@@ -279,11 +310,13 @@
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
+    justify-content: baseline;
+    width: 50%;
   }
 
-  .footer-content h2 {
+  .footer-content h3 {
     font-family: "Lato", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   /* box elements */
@@ -467,25 +500,33 @@
 
   /* ==Logo Section Mobile Version== */
   .logo-section {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: 4rem;
   }
 
-  .logo-section h1 {
+  .logo-section h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-top: 4rem;
+    margin-bottom: 1rem;
     font-family: "Lato", sans-serif;
-    padding-inline: 3rem;
+    padding-inline: 2rem;
   }
 
   .logo-section p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "Lato", sans-serif;
     font-weight: 600;
-    color: #333;
+    color: var(--lightmidas);
     padding-inline: 2rem;
+    margin-top: 1rem;
   }
 
   .logo-section .box {
@@ -508,24 +549,34 @@
   /* ===History Section for mobile version=== */
 
   .history-section {
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     font-family: "Lato", sans-serif;
     text-align: center;
-    margin-top: -2rem;
   }
 
-  .history-section h1 {
+  .history-section h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-top: 4rem;
     font-family: "Lato", sans-serif;
     margin-bottom: 1rem;
   }
 
+  .hz-line{
+    width:4rem;
+    height: 0.2rem;
+    background-color: var(--dark);
+  }
+
   .history-section p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
+    margin-top: 1rem;
+    color: var(--midas);
   }
 
   .history-section .card-container {
@@ -535,6 +586,7 @@
     align-items: center;
     margin-top: 2rem;
     gap: 0.5rem;
+    width:100%;
   }
 
   .history-section .card {
@@ -552,15 +604,21 @@
   }
 
   .history-section .card:nth-of-type(1) {
-    background-image: url("../images/London\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/London\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(2) {
-    background-image: url("../images/sydney\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/sydney\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(3) {
-    background-image: url("../images/baku\ summit.jpg");
+    background-image: linear-gradient(to bottom,
+    rgba(236, 83, 66, 0.571),
+    rgba(236, 82, 66, 0.5)),url("../images/baku\ summit.jpg");
   }
 
   .history-section .card p {
@@ -572,7 +630,7 @@
   .partners {
     background-color: #333;
     padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: #f0f0f0;
   }
 
@@ -603,12 +661,14 @@
     background-color: #fff;
     color: #333;
     padding: 2rem;
+    align-items: center;
   }
 
   .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    justify-items: center;
   }
 
   .logo-content {
@@ -616,18 +676,22 @@
     justify-content: flex-end;
     align-items: center;
     background-color: transparent;
-    width: 50%;
+    width: 40%;
+    position: relative;
+    top: 0.5rem;
   }
 
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
     justify-items: center;
+    width: 60%;
   }
 
-  .footer-content h2 {
+  .footer-content h3 {
     font-family: "Lato", sans-serif;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--midas);
   }
 
   /* box elements */
