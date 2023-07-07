@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.single-dot{
+.single-dot {
   background-color: var(--orange);
   width: 0.2rem;
   height: 0.2rem;
@@ -71,7 +71,7 @@
 .speaker-name {
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--midas)
+  color: var(--midas);
 }
 
 .speaker-designation {
@@ -91,7 +91,7 @@
   width: 3rem;
   height: 0.2rem;
   margin: 0.8rem auto;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
 .program-speaker-btn {
@@ -112,7 +112,7 @@
 }
 
 @media (min-width: 767px) {
-/* ---- */
+  /* ---- */
   .speaker-section {
     background-color: #d3d3d3;
   }
@@ -142,7 +142,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-inline: 6rem;
-    padding-top:0.4rem;
+    padding-top: 0.4rem;
     padding-bottom: 0.4rem;
   }
 
@@ -157,10 +157,6 @@
     margin-left: 0.8rem;
     color: white;
     font-size: 0.6rem;
-  }
-
-  .first-toolbar ul li img{
-    height: 0.6rem;
   }
 
   .second-toolbar {
@@ -196,7 +192,7 @@
 
   .second-toolbar ul li {
     margin-right: 1.1rem;
-    margin-left:0.5rem;
+    margin-left: 0.5rem;
     color: var(--midas);
     font-size: 0.75rem;
     font-weight: 400;
@@ -350,7 +346,6 @@
     text-decoration: underline;
   }
 
-  
   /* Custom styles for the partners section */
   .partners {
     background-color: #333;
@@ -415,7 +410,6 @@
     font-size: 0.8rem;
   }
 
-
   /* Weird rules */
   .program .card h3 {
     font-family: "Lato", sans-serif;
@@ -425,6 +419,9 @@
     color: var(--orange);
   }
 
+  .first-toolbar ul li img {
+    height: 0.6rem;
+  }
 
   .navbar {
     display: none;
@@ -433,7 +430,9 @@
   .mobile {
     display: none;
   }
-  .see-more, .see-less{
+
+  .see-more,
+  .see-less {
     display: none;
   }
 }
@@ -664,12 +663,13 @@
     color: var(--orange);
   }
 
-  .btn-cont{
+  .btn-cont {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .join-btn{
+
+  .join-btn {
     box-sizing: border-box;
     background-color: var(--orange);
     padding: 1.5rem;
@@ -678,7 +678,7 @@
     width: 50%;
   }
 
-  .join-btn p{
+  .join-btn p {
     text-align: center;
     font-size: 1rem;
     color: white;
@@ -686,10 +686,10 @@
   }
 
   /* =======speaker section for mobile version======== */
-  .see-more{
+  .see-more {
     background-color: white;
     height: 3rem;
-    font-family:"Lato",sans-serif;
+    font-family: "Lato", sans-serif;
     text-align: center;
     padding-top: 1rem;
     margin: auto;
@@ -703,12 +703,12 @@
     justify-content: center;
   }
 
-  .see-less{
+  .see-less {
     background-color: white;
     height: 3rem;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato", sans-serif;
     margin: auto;
-    display:none;
+    display: none;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     box-sizing: border-box;
@@ -720,7 +720,7 @@
     justify-content: center;
   }
 
-  .icon-img{
+  .icon-img {
     position: relative;
     bottom: 0.45rem;
   }
@@ -729,11 +729,6 @@
   .partners {
     display: none;
   }
-
-
-  
 }
 
-
-
-/*desktop*/
+/* desktop */

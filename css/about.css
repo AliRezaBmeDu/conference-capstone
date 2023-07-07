@@ -9,7 +9,6 @@
   --lightmidas: #868686;
 }
 
-
 @media (min-width: 768px) {
   .body {
     margin: auto;
@@ -25,7 +24,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-inline: 6rem;
-    padding-top:0.4rem;
+    padding-top: 0.4rem;
     padding-bottom: 0.4rem;
   }
 
@@ -36,15 +35,10 @@
     margin: 0;
   }
 
-
   .first-toolbar ul li {
     margin-left: 0.8rem;
     color: white;
     font-size: 0.6rem;
-  }
-
-  .first-toolbar ul li img{
-    height: 0.6rem;
   }
 
   .second-toolbar {
@@ -80,12 +74,13 @@
 
   .second-toolbar ul li {
     margin-right: 1.1rem;
-    margin-left:0.5rem;
+    margin-left: 0.5rem;
     color: var(--midas);
     font-size: 0.75rem;
     font-weight: 400;
     font-family: "Lato", sans-serif;
   }
+
   a {
     color: #333;
   }
@@ -139,6 +134,7 @@
     background-clip: border-box;
     -webkit-background-clip: text; */
     color: var(--orange);
+
     /* -webkit-text-fill-color: transparent; */
   }
 
@@ -193,12 +189,12 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color:var(--dark);
+    color: var(--dark);
   }
 
   .hz-line {
     background-color: var(--midas);
-    width:3rem;
+    width: 3rem;
     height: 0.2rem;
   }
 
@@ -247,7 +243,6 @@
     color: var(--lightmidas);
     margin-top: 1rem;
   }
-  
 
   .history-section .card {
     background-size: cover;
@@ -277,21 +272,33 @@
   }
 
   .history-section .card:nth-of-type(1) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/London\ summit.jpg");
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/London\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(2) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/sydney\ summit.jpg");
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/sydney\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(3) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/baku\ summit.jpg");
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/baku\ summit.jpg");
   }
 
   /* footer section */
@@ -303,15 +310,12 @@
 
   .footer-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
   }
-
 
   .logo-content {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     background-color: transparent;
     width: 50%;
   }
@@ -323,13 +327,17 @@
   .footer-content {
     background-color: transparent;
     align-items: flex-start;
-    justify-content: baseline;
     width: 50%;
   }
 
   .footer-content h3 {
     font-family: "Lato", sans-serif;
     font-size: 1rem;
+  }
+
+  /* weird elements */
+  .first-toolbar ul li img {
+    height: 0.6rem;
   }
 
   /* box elements */
@@ -578,8 +586,8 @@
     margin-bottom: 1rem;
   }
 
-  .hz-line{
-    width:4rem;
+  .hz-line {
+    width: 4rem;
     height: 0.2rem;
     background-color: var(--dark);
   }
@@ -598,7 +606,7 @@
     align-items: center;
     margin-top: 2rem;
     gap: 0.5rem;
-    width:100%;
+    width: 100%;
   }
 
   .history-section .card {
@@ -616,26 +624,33 @@
   }
 
   .history-section .card:nth-of-type(1) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/London\ summit.jpg");
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/London\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(2) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/sydney\ summit.jpg");
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/sydney\ summit.jpg");
   }
 
   .history-section .card:nth-of-type(3) {
-    background-image: linear-gradient(to bottom,
-    rgba(236, 83, 66, 0.571),
-    rgba(236, 82, 66, 0.5)),url("../images/baku\ summit.jpg");
-  }
-
-  .history-section .card p {
-    font-size: 1.5rem;
-    color: white;
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/baku\ summit.jpg");
   }
 
   /* Partner Section for About page mobile version */
@@ -646,13 +661,13 @@
     color: #f0f0f0;
   }
 
-  .partner-head{
+  .partner-head {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .underline{
+  .underline {
     background-color: var(--midas);
     height: 0.2rem;
     width: 3rem;
@@ -722,6 +737,12 @@
   }
 
   /* box elements */
+
+  .history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
   .homepage .box p {
     font-size: 1rem;
     line-height: 1.2rem;
