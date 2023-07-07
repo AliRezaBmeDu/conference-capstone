@@ -7,9 +7,6 @@
   --dark: #272a31;
   --midas: #595959;
   --lightmidas: #868686;
-  --primary-red: #ec5242;
-	--primary-black: #272a31;
-	--primary-grey: #d3d3d3;
 }
 
 /* speaker section common style */
@@ -34,6 +31,7 @@
   height: 0.2rem;
   border-radius: 50%;
 }
+
 .dot-line {
   display: flex;
   width: 4rem;
@@ -78,7 +76,7 @@
 
 .speaker-designation {
   font-size: 0.9rem;
-  color: var(--primary-red);
+  color: var(--orange);
   margin: 5px 1px 20px 0;
   font-style: italic;
 }
@@ -156,9 +154,13 @@
   }
 
   .first-toolbar ul li {
-    margin-left: 1.2rem;
+    margin-left: 0.8rem;
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  .first-toolbar ul li img{
+    height: 0.6rem;
   }
 
   .second-toolbar {
@@ -173,10 +175,6 @@
   .second-toolbar .logo {
     width: 13.125rem;
     height: 3.125rem;
-
-    /* background-color: #333; */
-
-    /* color: white; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,8 +209,8 @@
 
   .second-toolbar .other-element {
     box-sizing: border-box;
-    border: solid;
-    color: #333;
+    border: solid var(--orange);
+    color: var(--midas);
     text-align: center;
     width: 5rem;
     font-size: 0.6rem;
@@ -238,7 +236,7 @@
     background-image: url("../images/home_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.2;
   }
 
   .homepage-content {
@@ -349,6 +347,7 @@
     font-family: "Lato", sans-serif;
     color: #f0f0f0;
     font-size: 1rem;
+    text-decoration: underline;
   }
 
   
@@ -413,7 +412,7 @@
 
   .footer-content h3 {
     font-family: "Lato", sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
 
