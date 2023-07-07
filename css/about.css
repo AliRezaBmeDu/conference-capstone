@@ -116,17 +116,17 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
+    background-image: url("../images/about_bg.avif");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 
   .homepage-content {
     position: relative;
     z-index: 1;
     padding: 5rem;
-    color: #333;
+    color: var(--dark);
     font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
@@ -135,11 +135,11 @@
   }
 
   .homepage-content h1 {
-    background-image: url("../images/text_bg.jpg");
+    /* background-image: url("../images/text_bg.jpg");
     background-clip: border-box;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    color: var(--orange);
+    /* -webkit-text-fill-color: transparent; */
   }
 
   .homepage h1 {
@@ -160,7 +160,7 @@
   }
 
   .homepage .box {
-    background-color: rgb(241, 234, 234);
+    background-color: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
@@ -475,11 +475,10 @@
   }
 
   .homepage-content h1 {
-    background-image: url("../images/text_bg.jpg");
+    /* background-image: url("../images/text_bg.jpg");
     background-clip: border-box;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    color: var(--orange);
   }
 
   .main-title {
