@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+  --dark: #272a31;
+  --midas: #595959;
+  --lightmidas: #868686;
+}
+
+@media (min-width: 768px) {
+  .body {
+    margin: auto;
+    background-color: #f9f9f9;
+    font-family: "Lato", sans-serif;
+  }
+
+  .first-toolbar {
+    height: 1.5rem;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 6rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .first-toolbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .first-toolbar ul li {
+    margin-left: 0.8rem;
+    color: white;
+    font-size: 0.6rem;
+  }
+
+  .second-toolbar {
+    height: 4.25rem;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5rem;
+  }
+
+  .second-toolbar .logo {
+    width: 13.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Agdasima", "Times New Roman", sans-serif;
+  }
+
+  .logo img {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  .second-toolbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  .second-toolbar ul li {
+    margin-right: 1.1rem;
+    margin-left: 0.5rem;
+    color: var(--midas);
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+  }
+
+  a {
+    color: #333;
+  }
+
+  .second-toolbar .other-element {
+    box-sizing: border-box;
+    border: solid var(--orange);
+    color: #333;
+    text-align: center;
+    width: 5rem;
+    font-size: 0.6rem;
+    padding: 0.1rem;
+    float: inline-end;
+    right: 0.8rem;
+    margin-left: 2rem;
+    margin-top: -0.2rem;
+  }
+
+  /* CSS styles for the homepage section */
+  .homepage {
+    position: relative;
+  }
+
+  .homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/about_bg.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  .homepage-content {
+    position: relative;
+    z-index: 1;
+    padding: 5rem;
+    color: var(--dark);
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepage-content h1 {
+    /* background-image: url("../images/text_bg.jpg");
+    background-clip: border-box;
+    -webkit-background-clip: text; */
+    color: var(--orange);
+
+    /* -webkit-text-fill-color: transparent; */
+  }
+
+  .homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    width: 70%;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .homepage .box {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .homepage p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .contact {
+    font-weight: 700;
+  }
+
+  /* CSS styles for the logo-section */
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .logo-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark);
+  }
+
+  .hz-line {
+    background-color: var(--midas);
+    width: 3rem;
+    height: 0.2rem;
+  }
+
+  .logo-section p {
+    font-size: 0.75rem;
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--lightmidas);
+    font-weight: 700;
+  }
+
+  .logo-section .box {
+    background-color: rgba(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333;
+    margin-top: 1rem;
+    height: 10rem;
+  }
+
+  .logo-section img {
+    height: 20rem;
+    margin-top: -6rem;
+  }
+
+  /* CSS styles for the history section */
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .history-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .history-section p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--lightmidas);
+    margin-top: 1rem;
+  }
+
+  .history-section .card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(54, 1, 1, 0.5);
+    background-blend-mode: multiply;
+    width: 16rem;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+  }
+
+  .history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .history-section .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .history-section .card:nth-of-type(1) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/London\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(2) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/sydney\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(3) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/baku\ summit.jpg");
+  }
+
+  /* footer section */
+  footer {
+    background-color: #dacdcd;
+    color: #1a1818;
+    padding: 2rem;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-content {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    width: 50%;
+  }
+
+  .logo-content img {
+    width: 16rem;
+  }
+
+  .footer-content {
+    background-color: transparent;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .footer-content h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+  }
+
+  /* weird elements */
+  .first-toolbar ul li img {
+    height: 0.6rem;
+  }
+
+  /* box elements */
+  .homepage .box p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  body {
+    margin: auto;
+    background-color: #fff;
+    width: 100vw;
+  }
+
+  .first-toolbar,
+  .second-toolbar {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .hide-seek {
+    display: none !important;
+  }
+
+  /* hover part */
+  a:hover {
+    background-color: lightblue;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+    z-index: 1;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .menu-list li a {
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .close-button {
+    margin-left: 3rem;
+    border: none;
+  }
+
+  .navbar {
+    background-color: transparent;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    height: 5rem;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #333;
+    width: 1.5rem;
+    height: 0.2rem;
+    border: none;
+  }
+
+  /* homepage section about for mobile */
+
+  .homepage {
+    position: relative;
+
+    /* margin-top: 3rem; */
+  }
+
+  .homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQy-eJ0iPaxCj6NlEpJSne7O5U6hZXSmrKw&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  .homepage-content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepage-content h1 {
+    /* background-image: url("../images/text_bg.jpg");
+    background-clip: border-box;
+    -webkit-background-clip: text; */
+    color: var(--orange);
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .homepage .box {
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .homepage p {
+    text-align: center;
+  }
+
+  /* ==Logo Section Mobile Version== */
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .logo-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+    padding-inline: 2rem;
+  }
+
+  .logo-section p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    color: var(--lightmidas);
+    padding-inline: 2rem;
+    margin-top: 1rem;
+  }
+
+  .logo-section .box {
+    background-color: rgba(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px #333;
+    margin-top: 1rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-content img {
+    width: 8rem;
+    margin-top: -2rem;
+  }
+
+  /* ===History Section for mobile version=== */
+
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .history-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .hz-line {
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--dark);
+  }
+
+  .history-section p {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--midas);
+  }
+
+  .history-section .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .history-section .card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(54, 1, 1, 0.5);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+  }
+
+  .history-section .card:nth-of-type(1) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/London\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(2) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/sydney\ summit.jpg");
+  }
+
+  .history-section .card:nth-of-type(3) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(236, 83, 66, 0.571),
+        rgba(236, 82, 66, 0.5)
+      ),
+      url("../images/baku\ summit.jpg");
+  }
+
+  /* Partner Section for About page mobile version */
+  .partners {
+    background-color: #333;
+    padding: 2rem;
+    margin-top: 3rem;
+    color: #f0f0f0;
+  }
+
+  .partner-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .underline {
+    background-color: var(--midas);
+    height: 0.2rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .partners p {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.7rem;
+    color: var(--gray);
+  }
+
+  .sponsors {
+    margin: auto;
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sponsors img {
+    width: 6rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+
+  /* =====footer section for mobile===== */
+
+  /* footer section */
+  footer {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .logo-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    width: 40%;
+    position: relative;
+    top: 0.5rem;
+  }
+
+  .footer-content {
+    background-color: transparent;
+    align-items: flex-start;
+    justify-items: center;
+    width: 60%;
+  }
+
+  .footer-content h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+    color: var(--midas);
+  }
+
+  /* box elements */
+
+  .history-section .card p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .homepage .box p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+  .logo-section .box img {
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    width: 80%;
+  }
+}
