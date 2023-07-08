@@ -130,9 +130,6 @@
   }
 
   .homepage-content h1 {
-    /* background-image: url("../images/text_bg.jpg");
-    background-clip: border-box;
-    -webkit-background-clip: text; */
     color: var(--orange);
 
     /* -webkit-text-fill-color: transparent; */
@@ -483,9 +480,6 @@
   }
 
   .homepage-content h1 {
-    /* background-image: url("../images/text_bg.jpg");
-    background-clip: border-box;
-    -webkit-background-clip: text; */
     color: var(--orange);
   }
 

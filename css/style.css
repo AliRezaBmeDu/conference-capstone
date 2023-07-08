@@ -20,8 +20,8 @@
 }
 
 .heading {
-  margin: 30px auto;
-  font-size: 24px;
+  margin: 2rem auto;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -43,17 +43,14 @@
 .speaker-card {
   display: flex;
   flex-direction: row;
-  margin: 20px 15px;
+  margin: 1.25rem 15px;
   background-image: url(../images/speakers/speaker_background.png);
   background-position: top left;
-  background-size: 100px;
+  background-size: 6.25rem;
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
 
-.speaker-card:hover {
-  transform: scale(1.1);
-}
 
 .speaker-card img {
   min-width: 10rem;
@@ -65,7 +62,7 @@
 .speaker-detail {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 
 .speaker-name {
@@ -77,13 +74,13 @@
 .speaker-designation {
   font-size: 0.9rem;
   color: var(--orange);
-  margin: 5px 1px 20px 0;
+  margin: 0.3rem 1px 1.25rem 0;
   font-style: italic;
 }
 
 .speaker-about {
-  font-size: 14px;
-  font-family: "lato", sans-serif;
+  font-size: 0.875rem;
+  font-family: "Lato", sans-serif;
 }
 
 .endline {
@@ -94,27 +91,10 @@
   margin-bottom: 2rem;
 }
 
-.program-speaker-btn {
-  background-color: white;
-  border: 0.1px solid rgb(61, 63, 67);
-  width: 310px;
-  margin-top: 30px;
-  margin-bottom: 35px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  padding: 12px;
-}
-
-.program-speaker-btn img {
-  padding-left: 15px;
-}
-
 @media (min-width: 767px) {
   /* ---- */
   .speaker-section {
-    background-color: #d3d3d3;
+    background-color: var(--gray);
   }
 
   .speakercard-container {
